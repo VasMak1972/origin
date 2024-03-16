@@ -15,7 +15,7 @@ public:
     }
     void print() override;
 
-    double race(int distance) override;
+    double race(double distance) override;
 };
 
 //О р е л
@@ -38,7 +38,7 @@ public:
         name = "Ковер-самолет";
         speed = 10;
     }
-    double race(int distance) override;
+    double race(double distance) override;
 };
 
 //М е т л а
@@ -49,5 +49,5 @@ public:
         name = "Метла";
         speed = 20;
     }
-    double race(int distance) override;
+    double race(double distance) override;
 };

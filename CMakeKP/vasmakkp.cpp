@@ -134,7 +134,7 @@ int main() {
                 system("cls");
 
                 Transport transport;
-                Transport trn;
+                Transport* trn = &transport;
                 Camel camel; CamelFast camel_fast; Kentavr kentavr; Boots boots;
                 Carpet_fly carpet; Broom broom; Eagle eagle;
 
@@ -150,7 +150,7 @@ int main() {
                     }
                     if (all.boots == tmp.boots)
                     {
-                        std::cout << "Ботинки-вездеходы успешно зарегистрированы!"; n++; transport = boots; trn = boots; break;
+                        std::cout << "Ботинки-вездеходы успешно зарегистрированы!"; n++; transport = boots; trn = &boots; break;
                     }
                     std::cout << "Ботинки-вездеходы неправильное транспортное средство!"; n--; error = true; break;
 
@@ -161,7 +161,7 @@ int main() {
                     }
                     if (all.broom == tmp.broom)
                     {
-                        std::cout << "Метла успешно зарегистрирована!"; n++; transport = broom; trn = broom; break;
+                        std::cout << "Метла успешно зарегистрирована!"; n++; transport = broom; trn = &broom; break;
                     }
                     std::cout << "Метла неправильное транспортное средство!"; n--; error = true; break;
 
@@ -172,7 +172,7 @@ int main() {
                     }
                     if (all.camel == tmp.camel)
                     {
-                        std::cout << "Верблюд успешно зарегистрирован!"; n++; transport = camel; trn = camel; break;
+                        std::cout << "Верблюд успешно зарегистрирован!"; n++; transport = camel; trn = &camel; break;
                     }
                     std::cout << "Верблюд неправильное транспортное средство!"; n--; error = true; break;
 
@@ -183,7 +183,7 @@ int main() {
                     }
                     if (all.kentavr == tmp.kentavr)
                     {
-                        std::cout << "Кентавр успешно зарегистрирован!"; n++; transport = kentavr; trn = kentavr; break;
+                        std::cout << "Кентавр успешно зарегистрирован!"; n++; transport = kentavr; trn = &kentavr; break;
                     }
                     std::cout << "Кентавр неправильное транспортное средств!"; n--; error = true; break;
 
@@ -194,7 +194,7 @@ int main() {
                     }
                     if (all.eagle == tmp.eagle)
                     {
-                        std::cout << "Орел успешно зарегистрирован!"; n++; transport = eagle; trn = eagle; break;
+                        std::cout << "Орел успешно зарегистрирован!"; n++; transport = eagle; trn = &eagle; break;
                     }
                     std::cout << "Орел неправильное транспортное средство!"; n--; error = true; break;
 
@@ -205,7 +205,7 @@ int main() {
                     }
                     if (all.camel_fast == tmp.camel_fast)
                     {
-                        std::cout << "Верблюд-быстроход успешно зарегистрирован"; n++; transport = camel_fast; trn = camel_fast; break;
+                        std::cout << "Верблюд-быстроход успешно зарегистрирован"; n++; transport = camel_fast; trn = &camel_fast; break;
                     }
                     std::cout << "Верблюд-быстроход неправильное транспортное средство!"; error = true; n--; break;
 
@@ -216,7 +216,7 @@ int main() {
                     }
                     if (all.carpet == tmp.carpet)
                     {
-                        std::cout << "Ковер-самолет успешно зарегистрирован!"; n++; transport = carpet; trn = carpet; break;
+                        std::cout << "Ковер-самолет успешно зарегистрирован!"; n++; transport = carpet; trn = &carpet; break;
                     }
                     std::cout << "Ковер-самолет неправильное транспортное средство!"; n--; error = true; break;
 
@@ -229,7 +229,7 @@ int main() {
 
                     k++;
                     name = transport.getNameTransport();
-                    time = trn.race(distance);
+                    time = trn->race(distance);
                     races[k].setRaces(name, time);
                 }
 

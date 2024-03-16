@@ -11,7 +11,7 @@ void AirTransport::print() {
     std::cout << std::endl;
 }
 
-double AirTransport::race(int distance) {
+double AirTransport::race(double distance) {
     double time = (factor * distance) / speed;
     return time;
 }
@@ -22,7 +22,7 @@ double AirTransport::race(int distance) {
 
 //Ковер-самолет
 
-double Carpet_fly::race(int distance) {
+double Carpet_fly::race(double distance) {
 
     if (distance >= 1000 && distance < 5000) { factor = 0.97; }
     else if (distance >= 5000 && distance < 10000) { factor = 0.9; }
@@ -35,7 +35,7 @@ double Carpet_fly::race(int distance) {
 
 //М е т л а
 
-double Broom::race(int distance) {
+double Broom::race(double distance) {
     int k = distance / 1000;
     factor = (1 - 0.01 * k);
     double time = (factor * distance) / speed;

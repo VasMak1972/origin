@@ -13,7 +13,7 @@ void Transport::print() {
     //std::cout << speed << std::endl;
 }
 
-double Transport::race(int distance) {
+double Transport::race(double distance) {
     double time = distance / speed;
     return time;
 }

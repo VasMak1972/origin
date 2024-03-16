@@ -22,19 +22,10 @@ public:
 
     void print() override;
 
-    double race(int distance) override;
+    double race(double distance) override;
 };
 
-//Кентавр
-class Kentavr : public ErthTransport {
-public:
-    Kentavr() : ErthTransport() {
-        name = "Кентавр";
-        speed = 15;
-        time_trvel = 8;
-        time_out_1 = 2;
-    }
-};
+
 
 //Верблюд
 class Camel : public ErthTransport {
@@ -46,8 +37,7 @@ public:
         time_out_1 = 5;
         time_out_2 = 8;
     }
-    double race(int distance) override;
-};
+ };
 
 //Ботинки-вездеходы
 class Boots : public ErthTransport {
@@ -61,8 +51,21 @@ public:
         time_out_2 = 5;
     }
 
-    double race(int distance) override;
+ };
+
+
+//Кентавр
+class Kentavr : public ErthTransport {
+public:
+    Kentavr() : ErthTransport() {
+        name = "Кентавр";
+        speed = 15;
+        time_trvel = 8;
+        time_out_1 = 2;
+    }
+    double race(double distance) override;
 };
+
 
 //Верблюд - быстроход
 class CamelFast : public Camel {
@@ -76,5 +79,5 @@ public:
         time_out_3 = 8;
     }
 
-    double race(int distance) override;
+    double race(double distance) override;
 };

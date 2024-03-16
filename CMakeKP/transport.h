@@ -13,7 +13,7 @@ public:
 
     virtual void print();
 
-    virtual double race(int distance);
+    virtual double race(double distance);
 
     std::string getNameTransport();
 };
