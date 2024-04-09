@@ -6,56 +6,58 @@ class smart_array {
 private:
     int* arr;
     int size;
-    int i;
+    int index;
 
 public:
     smart_array(int sz) {
         size = sz;
         arr = new int[size];
-        for (int j = 0; j < size; j++) {
-            arr[j] = 0;
+        for (int i = 0; i < size; i++) {
+            arr[i] = 0;
         }
-        i = 0;
+        index = 0;
     }
 
     smart_array(const smart_array& other) {
         size = other.size;
         arr = new int[size];
-      
-        for (int j = 0; j < size; j++) {
-            arr[j] = other.arr[j];
+        for (int i = 0; i < size; i++) {
+            arr[i] = other.arr[i];
         }
     }
 
     smart_array& operator=(const smart_array& other) {
-        if (this != &other) {
-            delete[] arr;
+        if (this == &other) {
+            return *this;
         }
+        delete[] arr;
         size = other.size;
+        index = other.index;
         arr = new int[size];
-        for (int j = 0; j < size; j++) {
-            arr[j] = other.arr[j];
+        for (int i = 0; i < size; i++) {
+            arr[i] = other.arr[i];
         }
         return *this;
     }
 
     void add_element(int num) {
-        if (i >= size || i < 0) {            ;
+        if (index >= size || index < 0) {
+            ;
             throw std::runtime_error("Error: index out of bounds");
         }
         else {
-            arr[i] = num;
-            std::cout << (i == 0 ? "" : ", ") << arr[i];
-            i++;
+            arr[index] = num;
+            std::cout << (index == 0 ? "" : ", ") << arr[index];
+            index++;
         }
     }
 
-    int get_element(int i) {
-        if (i >= size || i < 0) {
+    int get_element(int& index) {
+        if (index >= size || index < 0) {
             throw std::runtime_error("Error: index out of bounds");
         }
         else {
-            return arr[i];
+            return arr[index];
         }
     }
 
@@ -77,17 +79,23 @@ int main() {
         arr.add_element(1);
         arr.add_element(4);
         arr.add_element(155);
-        //arr.add_element(14);
+        arr.add_element(14);
         //arr.add_element(15);
         std::cout << std::endl;
 
-        smart_array new_arr(2);
+        smart_array new_arr(3);
         std::cout << "add new_arr = ";
         new_arr.add_element(44);
         new_arr.add_element(34);
 
-        //new_arr = arr;
-        arr = new_arr;
+        new_arr = arr;
+        new_arr.add_element(24);
+        //new_arr.add_element(14);
+        //new_arr.add_element(4);
+
+        //arr = new_arr;
+        //arr.add_element(33);
+        //arr.add_element(55);
 
         std::cout << std::endl;
         std::cout << std::endl;
