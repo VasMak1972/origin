@@ -1,8 +1,9 @@
 ﻿#include <iostream>
-#include <vector>
 #include <string>
 #include <algorithm>
+#include <vector>
 #include <sstream>
+#include <cstdlib>
 
 class BigInt {
 private:
@@ -11,27 +12,27 @@ private:
 public:
     BigInt(const std::string& nstr) : n_str(nstr) {}
 
-    BigInt(const BigInt&& other) {
+    BigInt(const BigInt&& other) noexcept {
         n_str = other.n_str;
     }
 
-    BigInt& operator=(const BigInt&& other) {
+    BigInt& operator=(const BigInt&& other) noexcept {
         if (this != &other) {
-            n_str = other.n_str;
+            n_str = std::move(other.n_str); ;
         }
         return *this;
     }
 
     BigInt& operator=(const BigInt& other) {
         if (this != &other) {
-            n_str = other.n_str;
+            n_str = std::move(other.n_str);
         }
         return *this;
     }
 
     ~BigInt() {}
 
-    int get_size() {
+    size_t get_size() {
         return n_str.size();
     }
 
@@ -43,8 +44,8 @@ public:
         int size_dif = 0;
         std::string stn_1 = bigint1.n_str;
         std::string stn_2 = bigint2.n_str;
-        int size_1 = stn_1.size();
-        int size_2 = stn_2.size();
+        size_t size_1 = stn_1.size();
+        size_t size_2 = stn_2.size();
         int size = std::max(size_1, size_2);
 
         // Выравнивание разрядов в числах 
@@ -94,8 +95,8 @@ public:
         int size_dif = 0;
         std::string stn_1 = bigint1.n_str;
         std::string stn_2 = bigint2.n_str;
-        int size_1 = stn_1.size();
-        int size_2 = stn_2.size();
+        size_t size_1 = stn_1.size();
+        size_t size_2 = stn_2.size();
         int size = std::max(size_1, size_2);
 
         std::string dif;
@@ -165,10 +166,11 @@ public:
 
         std::string stn_1 = bigint1.n_str;
         std::string stn_2 = bigint2.n_str;
-        int size_1 = stn_1.size();
-        int size_2 = stn_2.size();
+        size_t size_1 = stn_1.size();
+        size_t size_2 = stn_2.size();
         int size = std::max(size_1, size_2);
-        int size_dif = abs(size_1 - size_2);
+        int size_dif = size_1 - size_2;
+        size_dif = std::abs(size_dif);
 
         // Выравнивание разрядов в числах    
         if (size_2 > size_1) {
@@ -193,7 +195,7 @@ public:
         auto tmp = BigInt(temp);
 
         for (i = size - 1; i >= 0; i--) {
-            mltp.assign(size, '0'); // Обнуление массива mltp для промежуточных результатоов
+            mltp.assign(size, '0'); // Обнуление массива mltp для промежуточных результатов
             for (j = size - 1; j >= 0; j--) {
 
                 int n_1 = stoi(std::string(1, stn_1[j]));
@@ -270,8 +272,8 @@ public:
 
 int main() {
 
-    auto num_1 = BigInt("9992340");
-    auto num_2 = BigInt("999456");
+    auto num_1 = BigInt("999230");
+    auto num_2 = BigInt("99945609");
 
     std::cout << num_1 << std::endl;
     std::cout << num_2 << std::endl;
@@ -303,4 +305,3 @@ int main() {
     std::cout << "\n\n\nHello World!\n";
     return 0;
 }
-
