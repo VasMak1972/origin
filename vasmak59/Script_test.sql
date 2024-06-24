@@ -52,9 +52,11 @@ INSERT INTO AutorGenre (autor_id, genre_id) VALUES
 
 CREATE TABLE IF NOT EXISTS  Album (
 	id SERIAL PRIMARY KEY,
-	relise DATE NOT NULL,
-	autor VARCHAR(50) NOT NULL
-);
+	name_album TEXT NOT NULL,
+	autor VARCHAR(50) NOT NULL,	
+	relise DATE NOT NULL
+); 
+
 
 CREATE TABLE IF NOT EXISTS  AlbumAutor (
 	album_id INTEGER REFERENCES Album(id),
@@ -68,6 +70,7 @@ CREATE table IF NOT EXISTS  Track (
 	time INTEGER NOT NULL,
 	id_album INTEGER NOT NULL REFERENCES Album(id)
 );
+
 
 CREATE table IF NOT EXISTS  Collection (
 	id SERIAL PRIMARY KEY,
