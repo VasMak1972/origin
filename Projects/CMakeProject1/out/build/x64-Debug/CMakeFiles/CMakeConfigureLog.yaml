@@ -1,0 +1,739 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/vs1/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake:204 (message)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      The system is: Windows - 10.0.19043 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/vs1/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/vs1/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/vs1/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: D:/vs1/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.37.32825 для x64
+      (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+      
+      CMakeCCompilerId.c
+      Microsoft (R) Incremental Linker Version 14.37.32825.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCCompilerId.exe 
+      CMakeCCompilerId.obj 
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Projects/CMakeProject1/out/build/x64-Debug/CMakeFiles/3.26.4-msvc4/CompilerIdC/CMakeCCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/vs1/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
+      - "D:/vs1/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "D:/vs1/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Detecting C compiler /showIncludes prefix:
+        main.c
+        Примечание: включение файла:  C:\\Projects\\CMakeProject1\\out\\build\\x64-Debug\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Примечание: включение файла:  "
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/vs1/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/vs1/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/vs1/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: D:/vs1/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.37.32825 для x64
+      (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+      
+      CMakeCXXCompilerId.cpp
+      Microsoft (R) Incremental Linker Version 14.37.32825.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCXXCompilerId.exe 
+      CMakeCXXCompilerId.obj 
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Projects/CMakeProject1/out/build/x64-Debug/CMakeFiles/3.26.4-msvc4/CompilerIdCXX/CMakeCXXCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/vs1/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
+      - "D:/vs1/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "D:/vs1/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        main.c
+        Примечание: включение файла:  C:\\Projects\\CMakeProject1\\out\\build\\x64-Debug\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Примечание: включение файла:  "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/vs1/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "D:/vs1/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Projects/CMakeProject1/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-3cnibp"
+      binary: "C:/Projects/CMakeProject1/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-3cnibp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: C:/Projects/CMakeProject1/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-3cnibp
+        
+        Run Build Command(s):D:\\VS1\\COMMON7\\IDE\\COMMONEXTENSIONS\\MICROSOFT\\CMAKE\\Ninja\\ninja.exe -v cmTC_06adb && [1/2] D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_06adb.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_06adb.dir\\ /FS -c D:\\vs1\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.26\\Modules\\CMakeCCompilerABI.c
+        [2/2] cmd.exe /C "cd . && D:\\vs1\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_06adb.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_06adb.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_06adb.exe /implib:cmTC_06adb.lib /pdb:cmTC_06adb.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/vs1/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "D:/vs1/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Projects/CMakeProject1/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-njnq97"
+      binary: "C:/Projects/CMakeProject1/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-njnq97"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: C:/Projects/CMakeProject1/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-njnq97
+        
+        Run Build Command(s):D:\\VS1\\COMMON7\\IDE\\COMMONEXTENSIONS\\MICROSOFT\\CMAKE\\Ninja\\ninja.exe -v cmTC_c4ca7 && [1/2] D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_c4ca7.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_c4ca7.dir\\ /FS -c D:\\vs1\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp
+        [2/2] cmd.exe /C "cd . && D:\\vs1\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_c4ca7.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_c4ca7.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_c4ca7.exe /implib:cmTC_c4ca7.lib /pdb:cmTC_c4ca7.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/vs1/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CheckFunctionExists.cmake:91 (try_compile)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/config.cmake:38 (check_function_exists)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/CMakeLists.txt:27 (include)"
+    checks:
+      - "Looking for poll"
+    directories:
+      source: "C:/Projects/CMakeProject1/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-ctf52b"
+      binary: "C:/Projects/CMakeProject1/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-ctf52b"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Projects/libpqxx/libpqxx-7.9.1/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_POLL"
+      cached: true
+      stdout: |
+        Change Dir: C:/Projects/CMakeProject1/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-ctf52b
+        
+        Run Build Command(s):D:\\VS1\\COMMON7\\IDE\\COMMONEXTENSIONS\\MICROSOFT\\CMAKE\\Ninja\\ninja.exe -v cmTC_f2035 && [1/2] D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3 -DCHECK_FUNCTION_EXISTS=poll /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_f2035.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_f2035.dir\\ /FS -c C:\\Projects\\CMakeProject1\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-ctf52b\\CheckFunctionExists.c
+        [2/2] cmd.exe /C "cd . && D:\\vs1\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_f2035.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_f2035.dir\\CheckFunctionExists.c.obj  /out:cmTC_f2035.exe /implib:cmTC_f2035.lib /pdb:cmTC_f2035.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        FAILED: cmTC_f2035.exe 
+        cmd.exe /C "cd . && D:\\vs1\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_f2035.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_f2035.dir\\CheckFunctionExists.c.obj  /out:cmTC_f2035.exe /implib:cmTC_f2035.lib /pdb:cmTC_f2035.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_f2035.dir\\CheckFunctionExists.c.obj /out:cmTC_f2035.exe /implib:cmTC_f2035.lib /pdb:cmTC_f2035.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_f2035.dir/intermediate.manifest CMakeFiles\\cmTC_f2035.dir/manifest.res" failed (exit code 1120) with the following output:
+        CheckFunctionExists.c.obj : error LNK2019: ссылка на неразрешенный внешний символ poll в функции main.\x0d
+        cmTC_f2035.exe : fatal error LNK1120: неразрешенных внешних элементов: 1\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/pqxx_cxx_feature_checks.cmake:2 (try_compile)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/config.cmake:56 (include)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Projects/libpqxx/libpqxx-7.9.1/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_CHARCONV_FLOAT"
+      cached: true
+      stdout: |
+        Change Dir: C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):D:\\VS1\\COMMON7\\IDE\\COMMONEXTENSIONS\\MICROSOFT\\CMAKE\\Ninja\\ninja.exe -v cmTC_7c6b7 && [1/2] D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_7c6b7.dir\\PQXX_HAVE_CHARCONV_FLOAT.cxx.obj /FdCMakeFiles\\cmTC_7c6b7.dir\\ /FS -c C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_CHARCONV_FLOAT.cxx
+        FAILED: CMakeFiles/cmTC_7c6b7.dir/PQXX_HAVE_CHARCONV_FLOAT.cxx.obj 
+        D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_7c6b7.dir\\PQXX_HAVE_CHARCONV_FLOAT.cxx.obj /FdCMakeFiles\\cmTC_7c6b7.dir\\ /FS -c C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_CHARCONV_FLOAT.cxx
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_CHARCONV_FLOAT.cxx(15): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "and"
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/pqxx_cxx_feature_checks.cmake:6 (try_compile)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/config.cmake:56 (include)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Projects/libpqxx/libpqxx-7.9.1/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_CHARCONV_INT"
+      cached: true
+      stdout: |
+        Change Dir: C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):D:\\VS1\\COMMON7\\IDE\\COMMONEXTENSIONS\\MICROSOFT\\CMAKE\\Ninja\\ninja.exe -v cmTC_69664 && [1/2] D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_69664.dir\\PQXX_HAVE_CHARCONV_INT.cxx.obj /FdCMakeFiles\\cmTC_69664.dir\\ /FS -c C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_CHARCONV_INT.cxx
+        [2/2] cmd.exe /C "cd . && D:\\vs1\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_69664.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_69664.dir\\PQXX_HAVE_CHARCONV_INT.cxx.obj  /out:cmTC_69664.exe /implib:cmTC_69664.lib /pdb:cmTC_69664.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/pqxx_cxx_feature_checks.cmake:10 (try_compile)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/config.cmake:56 (include)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Projects/libpqxx/libpqxx-7.9.1/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_CMP"
+      cached: true
+      stdout: |
+        Change Dir: C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):D:\\VS1\\COMMON7\\IDE\\COMMONEXTENSIONS\\MICROSOFT\\CMAKE\\Ninja\\ninja.exe -v cmTC_3faab && [1/2] D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_3faab.dir\\PQXX_HAVE_CMP.cxx.obj /FdCMakeFiles\\cmTC_3faab.dir\\ /FS -c C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_CMP.cxx
+        FAILED: CMakeFiles/cmTC_3faab.dir/PQXX_HAVE_CMP.cxx.obj 
+        D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_3faab.dir\\PQXX_HAVE_CMP.cxx.obj /FdCMakeFiles\\cmTC_3faab.dir\\ /FS -c C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_CMP.cxx
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_CMP.cxx(8): error C2039: "cmp_greater": не является членом "std".
+        D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\include\\utility(33): note:  см. объявление "std"
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_CMP.cxx(8): error C3861: cmp_greater: идентификатор не найден
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_CMP.cxx(8): error C2039: "cmp_less_equal": не является членом "std".
+        D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\include\\utility(33): note:  см. объявление "std"
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_CMP.cxx(8): error C3861: cmp_less_equal: идентификатор не найден
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/pqxx_cxx_feature_checks.cmake:14 (try_compile)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/config.cmake:56 (include)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Projects/libpqxx/libpqxx-7.9.1/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_CONCEPTS"
+      cached: true
+      stdout: |
+        Change Dir: C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):D:\\VS1\\COMMON7\\IDE\\COMMONEXTENSIONS\\MICROSOFT\\CMAKE\\Ninja\\ninja.exe -v cmTC_798bf && [1/2] D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_798bf.dir\\PQXX_HAVE_CONCEPTS.cxx.obj /FdCMakeFiles\\cmTC_798bf.dir\\ /FS -c C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_CONCEPTS.cxx
+        FAILED: CMakeFiles/cmTC_798bf.dir/PQXX_HAVE_CONCEPTS.cxx.obj 
+        D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_798bf.dir\\PQXX_HAVE_CONCEPTS.cxx.obj /FdCMakeFiles\\cmTC_798bf.dir\\ /FS -c C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_CONCEPTS.cxx
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_CONCEPTS.cxx(5): fatal error C1189: #error:  "No PQXX_HAVE_CONCEPTS: __cpp_concepts is not set."
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/pqxx_cxx_feature_checks.cmake:18 (try_compile)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/config.cmake:56 (include)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Projects/libpqxx/libpqxx-7.9.1/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_CXA_DEMANGLE"
+      cached: true
+      stdout: |
+        Change Dir: C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):D:\\VS1\\COMMON7\\IDE\\COMMONEXTENSIONS\\MICROSOFT\\CMAKE\\Ninja\\ninja.exe -v cmTC_3928d && [1/2] D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_3928d.dir\\PQXX_HAVE_CXA_DEMANGLE.cxx.obj /FdCMakeFiles\\cmTC_3928d.dir\\ /FS -c C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_CXA_DEMANGLE.cxx
+        FAILED: CMakeFiles/cmTC_3928d.dir/PQXX_HAVE_CXA_DEMANGLE.cxx.obj 
+        D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_3928d.dir\\PQXX_HAVE_CXA_DEMANGLE.cxx.obj /FdCMakeFiles\\cmTC_3928d.dir\\ /FS -c C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_CXA_DEMANGLE.cxx
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_CXA_DEMANGLE.cxx(7): fatal error C1083: Не удается открыть файл включение: cxxabi.h: No such file or directory,
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/pqxx_cxx_feature_checks.cmake:22 (try_compile)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/config.cmake:56 (include)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Projects/libpqxx/libpqxx-7.9.1/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_GCC_PURE"
+      cached: true
+      stdout: |
+        Change Dir: C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):D:\\VS1\\COMMON7\\IDE\\COMMONEXTENSIONS\\MICROSOFT\\CMAKE\\Ninja\\ninja.exe -v cmTC_b9eea && [1/2] D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_b9eea.dir\\PQXX_HAVE_GCC_PURE.cxx.obj /FdCMakeFiles\\cmTC_b9eea.dir\\ /FS -c C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_GCC_PURE.cxx
+        FAILED: CMakeFiles/cmTC_b9eea.dir/PQXX_HAVE_GCC_PURE.cxx.obj 
+        D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_b9eea.dir\\PQXX_HAVE_GCC_PURE.cxx.obj /FdCMakeFiles\\cmTC_b9eea.dir\\ /FS -c C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_GCC_PURE.cxx
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_GCC_PURE.cxx(2): error C2065: pure: необъявленный идентификатор
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_GCC_PURE.cxx(2): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "f"
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_GCC_PURE.cxx(2): error C2059: синтаксическая ошибка: )
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_GCC_PURE.cxx(3): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_GCC_PURE.cxx(3): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_GCC_PURE.cxx(9): error C3861: f: идентификатор не найден
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/pqxx_cxx_feature_checks.cmake:26 (try_compile)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/config.cmake:56 (include)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Projects/libpqxx/libpqxx-7.9.1/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_GCC_VISIBILITY"
+      cached: true
+      stdout: |
+        Change Dir: C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):D:\\VS1\\COMMON7\\IDE\\COMMONEXTENSIONS\\MICROSOFT\\CMAKE\\Ninja\\ninja.exe -v cmTC_4eaeb && [1/2] D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_4eaeb.dir\\PQXX_HAVE_GCC_VISIBILITY.cxx.obj /FdCMakeFiles\\cmTC_4eaeb.dir\\ /FS -c C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_GCC_VISIBILITY.cxx
+        FAILED: CMakeFiles/cmTC_4eaeb.dir/PQXX_HAVE_GCC_VISIBILITY.cxx.obj 
+        D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_4eaeb.dir\\PQXX_HAVE_GCC_VISIBILITY.cxx.obj /FdCMakeFiles\\cmTC_4eaeb.dir\\ /FS -c C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_GCC_VISIBILITY.cxx
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_GCC_VISIBILITY.cxx(2): error C2143: синтаксическая ошибка: отсутствие ")" перед "("
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_GCC_VISIBILITY.cxx(2): error C2079: "visibility" использует не имеющую определения структуру struct "__attribute__"
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_GCC_VISIBILITY.cxx(2): error C2440: инициализация: невозможно преобразовать "const char [7]" в "int"
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_GCC_VISIBILITY.cxx(2): note: Не существует контекста, в котором такое преобразование возможно
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_GCC_VISIBILITY.cxx(2): error C2059: синтаксическая ошибка: )
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_GCC_VISIBILITY.cxx(2): error C2059: синтаксическая ошибка: )
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_GCC_VISIBILITY.cxx(2): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "D"
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_GCC_VISIBILITY.cxx(3): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_GCC_VISIBILITY.cxx(10): error C2065: D: необъявленный идентификатор
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_GCC_VISIBILITY.cxx(10): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "d"
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_GCC_VISIBILITY.cxx(10): error C2065: d: необъявленный идентификатор
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_GCC_VISIBILITY.cxx(11): error C2065: d: необъявленный идентификатор
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/pqxx_cxx_feature_checks.cmake:30 (try_compile)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/config.cmake:56 (include)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Projects/libpqxx/libpqxx-7.9.1/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_LIKELY"
+      cached: true
+      stdout: |
+        Change Dir: C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):D:\\VS1\\COMMON7\\IDE\\COMMONEXTENSIONS\\MICROSOFT\\CMAKE\\Ninja\\ninja.exe -v cmTC_6f4a9 && [1/2] D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_6f4a9.dir\\PQXX_HAVE_LIKELY.cxx.obj /FdCMakeFiles\\cmTC_6f4a9.dir\\ /FS -c C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_LIKELY.cxx
+        FAILED: CMakeFiles/cmTC_6f4a9.dir/PQXX_HAVE_LIKELY.cxx.obj 
+        D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_6f4a9.dir\\PQXX_HAVE_LIKELY.cxx.obj /FdCMakeFiles\\cmTC_6f4a9.dir\\ /FS -c C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_LIKELY.cxx
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_LIKELY.cxx(7): error C2065: because: необъявленный идентификатор
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_LIKELY.cxx(7): error C2065: older: необъявленный идентификатор
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_LIKELY.cxx(7): error C2065: C: необъявленный идентификатор
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_LIKELY.cxx(7): error C2065: standard: необъявленный идентификатор
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_LIKELY.cxx(7): error C3861: deliberately_fail: идентификатор не найден
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_LIKELY.cxx(11): warning C5051: для атрибута "likely" требуется по меньшей мере "/std:c++20"; игнорируется
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/pqxx_cxx_feature_checks.cmake:34 (try_compile)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/config.cmake:56 (include)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Projects/libpqxx/libpqxx-7.9.1/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_MULTIDIM"
+      cached: true
+      stdout: |
+        Change Dir: C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):D:\\VS1\\COMMON7\\IDE\\COMMONEXTENSIONS\\MICROSOFT\\CMAKE\\Ninja\\ninja.exe -v cmTC_dddc5 && [1/2] D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_dddc5.dir\\PQXX_HAVE_MULTIDIM.cxx.obj /FdCMakeFiles\\cmTC_dddc5.dir\\ /FS -c C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_MULTIDIM.cxx
+        FAILED: CMakeFiles/cmTC_dddc5.dir/PQXX_HAVE_MULTIDIM.cxx.obj 
+        D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_dddc5.dir\\PQXX_HAVE_MULTIDIM.cxx.obj /FdCMakeFiles\\cmTC_dddc5.dir\\ /FS -c C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_MULTIDIM.cxx
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_MULTIDIM.cxx(5): fatal error C1189: #error:  "No PQXX_HAVE_MULTIDIM: __cpp_multidimensional_subscript is not set."
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/pqxx_cxx_feature_checks.cmake:38 (try_compile)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/config.cmake:56 (include)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Projects/libpqxx/libpqxx-7.9.1/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_PATH"
+      cached: true
+      stdout: |
+        Change Dir: C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):D:\\VS1\\COMMON7\\IDE\\COMMONEXTENSIONS\\MICROSOFT\\CMAKE\\Ninja\\ninja.exe -v cmTC_9d5cf && [1/2] D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_9d5cf.dir\\PQXX_HAVE_PATH.cxx.obj /FdCMakeFiles\\cmTC_9d5cf.dir\\ /FS -c C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_PATH.cxx
+        [2/2] cmd.exe /C "cd . && D:\\vs1\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_9d5cf.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_9d5cf.dir\\PQXX_HAVE_PATH.cxx.obj  /out:cmTC_9d5cf.exe /implib:cmTC_9d5cf.lib /pdb:cmTC_9d5cf.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/pqxx_cxx_feature_checks.cmake:42 (try_compile)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/config.cmake:56 (include)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Projects/libpqxx/libpqxx-7.9.1/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_POLL"
+      cached: true
+      stdout: |
+        Change Dir: C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):D:\\VS1\\COMMON7\\IDE\\COMMONEXTENSIONS\\MICROSOFT\\CMAKE\\Ninja\\ninja.exe -v cmTC_88130 && [1/2] D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_88130.dir\\PQXX_HAVE_POLL.cxx.obj /FdCMakeFiles\\cmTC_88130.dir\\ /FS -c C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_POLL.cxx
+        FAILED: CMakeFiles/cmTC_88130.dir/PQXX_HAVE_POLL.cxx.obj 
+        D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_88130.dir\\PQXX_HAVE_POLL.cxx.obj /FdCMakeFiles\\cmTC_88130.dir\\ /FS -c C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_POLL.cxx
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_POLL.cxx(2): fatal error C1083: Не удается открыть файл включение: poll.h: No such file or directory,
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/pqxx_cxx_feature_checks.cmake:46 (try_compile)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/config.cmake:56 (include)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Projects/libpqxx/libpqxx-7.9.1/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_SLEEP_FOR"
+      cached: true
+      stdout: |
+        Change Dir: C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):D:\\VS1\\COMMON7\\IDE\\COMMONEXTENSIONS\\MICROSOFT\\CMAKE\\Ninja\\ninja.exe -v cmTC_d5597 && [1/2] D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_d5597.dir\\PQXX_HAVE_SLEEP_FOR.cxx.obj /FdCMakeFiles\\cmTC_d5597.dir\\ /FS -c C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_SLEEP_FOR.cxx
+        [2/2] cmd.exe /C "cd . && D:\\vs1\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_d5597.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_d5597.dir\\PQXX_HAVE_SLEEP_FOR.cxx.obj  /out:cmTC_d5597.exe /implib:cmTC_d5597.lib /pdb:cmTC_d5597.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/pqxx_cxx_feature_checks.cmake:50 (try_compile)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/config.cmake:56 (include)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Projects/libpqxx/libpqxx-7.9.1/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_SOURCE_LOCATION"
+      cached: true
+      stdout: |
+        Change Dir: C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):D:\\VS1\\COMMON7\\IDE\\COMMONEXTENSIONS\\MICROSOFT\\CMAKE\\Ninja\\ninja.exe -v cmTC_6b5f2 && [1/2] D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_6b5f2.dir\\PQXX_HAVE_SOURCE_LOCATION.cxx.obj /FdCMakeFiles\\cmTC_6b5f2.dir\\ /FS -c C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_SOURCE_LOCATION.cxx
+        FAILED: CMakeFiles/cmTC_6b5f2.dir/PQXX_HAVE_SOURCE_LOCATION.cxx.obj 
+        D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_6b5f2.dir\\PQXX_HAVE_SOURCE_LOCATION.cxx.obj /FdCMakeFiles\\cmTC_6b5f2.dir\\ /FS -c C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_SOURCE_LOCATION.cxx
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_SOURCE_LOCATION.cxx(5): fatal error C1189: #error:  "No PQXX_HAVE_SOURCE_LOCATION: __cpp_lib_source_location is not set."
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/pqxx_cxx_feature_checks.cmake:54 (try_compile)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/config.cmake:56 (include)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Projects/libpqxx/libpqxx-7.9.1/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_SPAN"
+      cached: true
+      stdout: |
+        Change Dir: C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):D:\\VS1\\COMMON7\\IDE\\COMMONEXTENSIONS\\MICROSOFT\\CMAKE\\Ninja\\ninja.exe -v cmTC_29f75 && [1/2] D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_29f75.dir\\PQXX_HAVE_SPAN.cxx.obj /FdCMakeFiles\\cmTC_29f75.dir\\ /FS -c C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_SPAN.cxx
+        FAILED: CMakeFiles/cmTC_29f75.dir/PQXX_HAVE_SPAN.cxx.obj 
+        D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_29f75.dir\\PQXX_HAVE_SPAN.cxx.obj /FdCMakeFiles\\cmTC_29f75.dir\\ /FS -c C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_SPAN.cxx
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_SPAN.cxx(5): fatal error C1189: #error:  "No PQXX_HAVE_SPAN: __cpp_lib_span is not set."
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/pqxx_cxx_feature_checks.cmake:58 (try_compile)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/config.cmake:56 (include)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Projects/libpqxx/libpqxx-7.9.1/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_SSIZE"
+      cached: true
+      stdout: |
+        Change Dir: C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):D:\\VS1\\COMMON7\\IDE\\COMMONEXTENSIONS\\MICROSOFT\\CMAKE\\Ninja\\ninja.exe -v cmTC_1805d && [1/2] D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_1805d.dir\\PQXX_HAVE_SSIZE.cxx.obj /FdCMakeFiles\\cmTC_1805d.dir\\ /FS -c C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_SSIZE.cxx
+        FAILED: CMakeFiles/cmTC_1805d.dir/PQXX_HAVE_SSIZE.cxx.obj 
+        D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_1805d.dir\\PQXX_HAVE_SSIZE.cxx.obj /FdCMakeFiles\\cmTC_1805d.dir\\ /FS -c C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_SSIZE.cxx
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_SSIZE.cxx(5): fatal error C1189: #error:  "No PQXX_HAVE_SSIZE: __cpp_lib_ssize is not set."
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/pqxx_cxx_feature_checks.cmake:62 (try_compile)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/config.cmake:56 (include)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Projects/libpqxx/libpqxx-7.9.1/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_STRERROR_R"
+      cached: true
+      stdout: |
+        Change Dir: C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):D:\\VS1\\COMMON7\\IDE\\COMMONEXTENSIONS\\MICROSOFT\\CMAKE\\Ninja\\ninja.exe -v cmTC_00da5 && [1/2] D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_00da5.dir\\PQXX_HAVE_STRERROR_R.cxx.obj /FdCMakeFiles\\cmTC_00da5.dir\\ /FS -c C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_STRERROR_R.cxx
+        FAILED: CMakeFiles/cmTC_00da5.dir/PQXX_HAVE_STRERROR_R.cxx.obj 
+        D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_00da5.dir\\PQXX_HAVE_STRERROR_R.cxx.obj /FdCMakeFiles\\cmTC_00da5.dir\\ /FS -c C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_STRERROR_R.cxx
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_STRERROR_R.cxx(11): error C3861: strerror_r: идентификатор не найден
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_STRERROR_R.cxx(13): error C2065: not: необъявленный идентификатор
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_STRERROR_R.cxx(13): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "not"
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_STRERROR_R.cxx(13): error C2065: not: необъявленный идентификатор
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_STRERROR_R.cxx(13): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "res"
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/pqxx_cxx_feature_checks.cmake:66 (try_compile)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/config.cmake:56 (include)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Projects/libpqxx/libpqxx-7.9.1/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_STRERROR_S"
+      cached: true
+      stdout: |
+        Change Dir: C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):D:\\VS1\\COMMON7\\IDE\\COMMONEXTENSIONS\\MICROSOFT\\CMAKE\\Ninja\\ninja.exe -v cmTC_9ffc8 && [1/2] D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_9ffc8.dir\\PQXX_HAVE_STRERROR_S.cxx.obj /FdCMakeFiles\\cmTC_9ffc8.dir\\ /FS -c C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_STRERROR_S.cxx
+        [2/2] cmd.exe /C "cd . && D:\\vs1\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_9ffc8.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_9ffc8.dir\\PQXX_HAVE_STRERROR_S.cxx.obj  /out:cmTC_9ffc8.exe /implib:cmTC_9ffc8.lib /pdb:cmTC_9ffc8.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/pqxx_cxx_feature_checks.cmake:70 (try_compile)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/config.cmake:56 (include)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Projects/libpqxx/libpqxx-7.9.1/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_THREAD_LOCAL"
+      cached: true
+      stdout: |
+        Change Dir: C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):D:\\VS1\\COMMON7\\IDE\\COMMONEXTENSIONS\\MICROSOFT\\CMAKE\\Ninja\\ninja.exe -v cmTC_a57f6 && [1/2] D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_a57f6.dir\\PQXX_HAVE_THREAD_LOCAL.cxx.obj /FdCMakeFiles\\cmTC_a57f6.dir\\ /FS -c C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_THREAD_LOCAL.cxx
+        [2/2] cmd.exe /C "cd . && D:\\vs1\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_a57f6.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_a57f6.dir\\PQXX_HAVE_THREAD_LOCAL.cxx.obj  /out:cmTC_a57f6.exe /implib:cmTC_a57f6.lib /pdb:cmTC_a57f6.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/pqxx_cxx_feature_checks.cmake:74 (try_compile)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/config.cmake:56 (include)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Projects/libpqxx/libpqxx-7.9.1/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_YEAR_MONTH_DAY"
+      cached: true
+      stdout: |
+        Change Dir: C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):D:\\VS1\\COMMON7\\IDE\\COMMONEXTENSIONS\\MICROSOFT\\CMAKE\\Ninja\\ninja.exe -v cmTC_dcc32 && [1/2] D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_dcc32.dir\\PQXX_HAVE_YEAR_MONTH_DAY.cxx.obj /FdCMakeFiles\\cmTC_dcc32.dir\\ /FS -c C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_YEAR_MONTH_DAY.cxx
+        FAILED: CMakeFiles/cmTC_dcc32.dir/PQXX_HAVE_YEAR_MONTH_DAY.cxx.obj 
+        D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_dcc32.dir\\PQXX_HAVE_YEAR_MONTH_DAY.cxx.obj /FdCMakeFiles\\cmTC_dcc32.dir\\ /FS -c C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_YEAR_MONTH_DAY.cxx
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_YEAR_MONTH_DAY.cxx(6): error C2039: "year": не является членом "std::chrono".
+        D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\include\\__msvc_chrono.hpp(785): note:  см. объявление "std::chrono"
+        C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\PQXX_HAVE_YEAR_MONTH_DAY.cxx(6): error C2065: year: необъявленный идентификатор
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/pqxx_cxx_feature_checks.cmake:78 (try_compile)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/cmake/config.cmake:56 (include)"
+      - "C:/Projects/libpqxx/libpqxx-7.9.1/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Projects/libpqxx/libpqxx-7.9.1/cmake"
+    buildResult:
+      variable: "no_need_fslib"
+      cached: true
+      stdout: |
+        Change Dir: C:/Projects/CMakeProject1/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):D:\\VS1\\COMMON7\\IDE\\COMMONEXTENSIONS\\MICROSOFT\\CMAKE\\Ninja\\ninja.exe -v cmTC_9b2a4 && [1/2] D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_9b2a4.dir\\no_need_fslib.cxx.obj /FdCMakeFiles\\cmTC_9b2a4.dir\\ /FS -c C:\\Projects\\libpqxx\\libpqxx-7.9.1\\config-tests\\no_need_fslib.cxx
+        [2/2] cmd.exe /C "cd . && D:\\vs1\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_9b2a4.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- D:\\vs1\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_9b2a4.dir\\no_need_fslib.cxx.obj  /out:cmTC_9b2a4.exe /implib:cmTC_9b2a4.lib /pdb:cmTC_9b2a4.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+...
