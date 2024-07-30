@@ -1,5 +1,5 @@
-﻿#include <pqxx/pqxx>
-#include <iostream>
+﻿#include <iostream>
+#include <pqxx/pqxx>
 #include <string>
 
 
@@ -10,18 +10,16 @@ class ClientManager {
     //pqxx::work w2;
 
 
-  public:
-    ClientManager() {
-        pqxx::connection c(
-            "host=localhost "
-            "port=5432 "
-            "dbname=postgres "
-            "user=postgres "
-            "password=Parol1972");
-
-        std::cout << "Hello!" << std::endl;
+   public:
+    ClientManager(): c(
+        "host=localhost " //обязательно пробел
+        "port=5432 " //стандартный порт psql
+        "dbname=postgres " //своё имя базы
+        "user=postgres " //своё имя пользователя
+        "password=Parol1972") //свой пароль
+    {
+        std::cout << "Connection OK" << std::endl;
     } //конструктор, который настраивает соединение, может быть с параметрами
-
 
     void initDbStruct() {
         pqxx::work w1{ c };
@@ -41,13 +39,20 @@ class ClientManager {
             "CONSTRAINT pk PRIMARY KEY(person_id, phone_id)); "
         );
         w1.commit();
-
     }// Метод, создающий структуру БД (таблицы)
+          
 
-
-    void addClient(const std::string first_Name, const std::string last_Name, const std::string e_mail) {
+    void addClient(const std::string& first_Name, const std::string& last_Name, const std::string& e_mail) {   
+       
+       
        pqxx::work w2{ c };
-        w2.exec(" INSERT INTO person(f_name, l_name, e_mail) VALUES (:first_Name, :last_Name, :e_mail);"
+         
+        w2.exec(//"EXEC SQL BEGIN DECLARE SECTION; "
+                "DECLARE varchar first_Name ; "
+                "DECLARE last_Name varchar; "
+                "DECLARE e_mail varchar; "
+                //"EXEC SQL END DECLARE SECTION; "
+                "INSERT INTO person(f_name, l_name, e_mail) VALUES (:first_Name, :last_Name, :e_mail);"
         );
         w2.commit();
     } //создаём клиента и возвращаем его clientId
@@ -77,7 +82,7 @@ int main() {
     {
         ClientManager manager;
         manager.initDbStruct();
-        //manager.addClient("Ivan", "Ivanov", "tugrp@example.com");
+        manager.addClient("Ivan", "Ivanov", "tugrp@example.com");
         //manager.addPhoneNumber(1, "8-800-555-35-35");
 
 
