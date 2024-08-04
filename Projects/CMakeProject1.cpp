@@ -1,5 +1,7 @@
 ﻿#include <iostream>
 #include <pqxx/pqxx>
+#include <pqxx/connection>
+#include <pqxx/transaction>
 #include <string>
 
 
@@ -31,6 +33,7 @@ class ClientManager {
 
             "CREATE TABLE  IF NOT EXISTS "
             "phone (id SERIAL PRIMARY KEY, "
+            "id_client INTEGER NOT NULL, "
             "number_phone VARCHAR(50) NOT NULL); "
 
             "CREATE TABLE IF NOT EXISTS  person_phone("
@@ -39,26 +42,52 @@ class ClientManager {
             "CONSTRAINT pk PRIMARY KEY(person_id, phone_id)); "
         );
         w1.commit();
-    }// Метод, создающий структуру БД (таблицы)
+    }// метод, создающий структуру БД (таблицы)
           
 
-    void addClient(const std::string& first_Name, const std::string& last_Name, const std::string& e_mail) {   
-       
+   int addClient(const std::string& first_name, const std::string& last_name, const std::string& e_mail) {       
        
        pqxx::work w2{ c };
-         
-        w2.exec(//"EXEC SQL BEGIN DECLARE SECTION; "
-                "DECLARE varchar first_Name ; "
-                "DECLARE last_Name varchar; "
-                "DECLARE e_mail varchar; "
-                //"EXEC SQL END DECLARE SECTION; "
-                "INSERT INTO person(f_name, l_name, e_mail) VALUES (:first_Name, :last_Name, :e_mail);"
-        );
-        w2.commit();
+
+        w2.exec_params("INSERT INTO person(f_name, l_name, e_mail) VALUES ($1, $2, $3)", first_name, last_name, e_mail); 
+
+        int client_id = w2.query_value<int>("SELECT id FROM person");
+        
+        w2.commit();        
+
+        return client_id;
     } //создаём клиента и возвращаем его clientId
 
 
-    //void addPhoneNumber(int clientId, const std::string& phoneNumber)
+    
+   void addPhoneNumber(int client_id, const std::string& phone_number) {
+       
+       int phones_id = 0;
+
+       pqxx::work w3{ c };
+
+       w3.exec_params("INSERT INTO phone(id_client, number_phone) VALUES ($1, $2)", client_id, phone_number);
+
+       //for (auto &[phones_id] : w3.query<int>(
+           //"SELECT id FROM phone"))
+       //{
+          
+       //}
+
+       phones_id = w3.query_value<int>("SELECT id FROM phone LIMIT 1");
+
+       w3.commit();
+
+
+       pqxx::work w4{ c };
+
+       w4.exec_params("INSERT INTO person_phone(person_id, phone_id) VALUES ($1, $2)", client_id, phones_id);
+
+       w4.commit();
+    }
+
+
+
 
     //void updateClient(int clientId, const std::string& firstName, const std::string& lastName, const std::string& email)
 
@@ -82,7 +111,15 @@ int main() {
     {
         ClientManager manager;
         manager.initDbStruct();
-        manager.addClient("Ivan", "Ivanov", "tugrp@example.com");
+
+        int id_client = manager.addClient("Ivan", "Ivanovskiy", "ivgrp@example.com");
+
+        manager.addPhoneNumber(id_client, "8-800-555-35-35");
+        manager.addPhoneNumber(id_client, "8-815-010-77-34");
+        manager.addPhoneNumber(id_client, "8-8915-789-01-33");
+        //manager.addClient("Vasiliy", "Vasiliev", "vasgrp@example.com");
+
+
         //manager.addPhoneNumber(1, "8-800-555-35-35");
 
 
