@@ -6,13 +6,14 @@
 #include <chrono>
 #include <thread>
 #include <time.h>
+#include <math.h>
 #include <tuple>
 
 
 void sum(std::vector<int>& a, std::vector<int>& b, std::vector<int>& c, int start, int end)
 {
     for (int i = start; i < c.size(); i = i + end) {
-        std::this_thread::sleep_for(std::chrono::milliseconds(5));
+        std::this_thread::sleep_for(std::chrono::nanoseconds(1));
         c[i] = a[i] + b[i];
         //std::cout << "start = " << start << std::endl;
         //std::cout << c[i] << "  ";
@@ -20,25 +21,6 @@ void sum(std::vector<int>& a, std::vector<int>& b, std::vector<int>& c, int star
     }
 }
 
-//void sum2(std::vector<int>& a, std::vector<int>& b, std::vector<int>& c, int start, int end)
-//{
-    //for (int i = start; i < c.size(); i = i + end) {
-       // std::this_thread::sleep_for(std::chrono::milliseconds(10));
-        //c[i] = a[i] + b[i];
-        //std::cout << "sum2 = " << c[i] << "  ";
-        //std::cout << std::endl;
-    //}
-//}
-
-
-
-//void func(std::vector<int>& v) {
-//
-   //srand(time(0));
-   // for (int i = 0; i < v.size(); i++) {
-   //     v[i] = rand() % 89 + 10;
-   // }
-//}
 
 std::vector<int> rand_vec(int lngth)
 {
@@ -54,136 +36,111 @@ std::vector<int> rand_vec(int lngth)
 
 
 
-
-
-
 int main() {
 
-    const int rows = 3;
-    int cols = 0;
-
-    std::tuple<int, double, double, double>obj[rows];
+    const int cols = 5;
+    std::tuple<int, int, double, double, double, double, double>  obj[cols];
 
     unsigned int N = std::thread::hardware_concurrency();
     std::cout << "Number of threads: " << N << std::endl;
     std::cout << std::endl;
 
+      
+    std::vector<int> v1;
+    std::vector<int> v2;
 
-    int exp = 10;
-    int n = 10;
-    while (n <= 1000) {
+// *************** Разделение на потоки ****************************************
 
-        //int n = 5 * exp;  
-        std::vector<int> v1(n);
-        std::vector<int> v2(n);
-        std::vector<int> v3(n);
+    double times[5]{ 0 };
 
-        v1 = rand_vec(n);
-        std::this_thread::sleep_for(std::chrono::seconds(2));
-        v2 = rand_vec(n);
+    int calctr = 0;
+    int col = 0;
+    for (int i = 1; i <= 16; i = 2 * i) {
 
-        for (int i = 0; i < v1.size(); i++) {
-            std::cout << v1[i] << "\t";
+        std::cout << "Processing " << calctr+1 << std::endl;
+        std::cout << "thread = " << i << std::endl;
+        std::vector<std::thread> tr(i);        
+
+        int rows = 0;
+        for (int n = 1000; n <= 100000; n = 10 * n) {
+           
+            std::vector<int> v3(n);
+            v1 = rand_vec(n);
+            std::this_thread::sleep_for(std::chrono::seconds(2));
+            v2 = rand_vec(n);
+
+            //for (int i = 0; i < v1.size(); i++) {
+                //std::cout << v1[i] << "\t";
+            //}
+            //std::cout << std::endl;
+
+            //for (int i = 0; i < v2.size(); i++) {
+                //std::cout << v2[i] << "\t";
+            //}
+            //std::cout << std::endl;
+
+            auto start = std::chrono::high_resolution_clock::now();
+
+            for (int j = 0; j < i; j++) {
+                tr[j] = std::thread(sum, std::ref(v1), std::ref(v2), std::ref(v3), j, i);
+            }
+            for (int j = 0; j < i; j++) {
+                tr[j].join();
+            }
+
+            auto end = std::chrono::high_resolution_clock::now();
+            std::chrono::duration<double> time = end - start;
+            times[rows] = time.count();
+
+            std::cout << "n = " << n << std::endl;
+            std::cout << "time" << rows + 1 << " = " << times[rows] << std::endl;
+
+            //for (int k = 0; k < v3.size(); k++) {
+                //std::cout << v3[k] << "\t";
+            //}             
+
+            rows++;
+            calctr++;           
         }
-        std::cout << std::endl;
 
-        for (int i = 0; i < v2.size(); i++) {
-            std::cout << v2[i] << "\t";
+
+        // ***************** Сохранение данных *****************************
+
+        if (col < log10(1000)) {
+
+        std::get<0>(obj[col]) = 1000 * pow(10, col);
         }
+        std::get<1>(obj[col]) = i;
+        std::get<2>(obj[col]) = times[0];
+        std::get<3>(obj[col]) = times[1];
+        std::get<4>(obj[col]) = times[2];
+        //std::get<5>(obj[col]) = times[3];
+        //std::get<6>(obj[col]) = times[4];
+
+        col++;
         std::cout << std::endl;
-        std::cout << std::endl;
-
-
-        // ***************** Первый блок *****************************
-
-        auto start1 = std::chrono::high_resolution_clock::now();
-
-        std::thread t(sum, std::ref(v1), std::ref(v2), std::ref(v3), 0, 1);
-
-        auto end1 = std::chrono::high_resolution_clock::now();
-
-        std::chrono::duration<double> time1 = end1 - start1;
-
-        t.join();
-        std::cout << std::endl;
-        std::cout << "time1 = " << 1000 * time1.count() << std::endl;
-
-        //sum(v1, v2, v3, 0, v1.size());  
-        for (int i = 0; i < v3.size(); i++) {
-            std::cout << v3[i] << "\t";
-        }
-        std::cout << std::endl;
-        std::cout << std::endl;
-
-
-
-        // ***************** Второй блок *****************************
-
-        auto start2 = std::chrono::high_resolution_clock::now();
-
-        std::thread t1(sum, std::ref(v1), std::ref(v2), std::ref(v3), 0, 2);
-        std::thread t2(sum, std::ref(v1), std::ref(v2), std::ref(v3), 1, 2);
-
-        auto end2 = std::chrono::high_resolution_clock::now();
-
-        std::chrono::duration<double> time2 = end2 - start2;
-
-        t1.join();
-        t2.join();
-        std::cout << std::endl;
-        std::cout << "time2 = " << 1000 * time2.count() << std::endl;
-
-        for (int i = 0; i < v3.size(); i++) {
-            std::cout << v3[i] << "\t";
-        }
-        std::cout << std::endl;
-
-
-
-        // ***************** Третий блок *****************************
-
-        auto start4 = std::chrono::high_resolution_clock::now();
-
-        std::thread tr1(sum, std::ref(v1), std::ref(v2), std::ref(v3), 0, 4);
-        std::thread tr2(sum, std::ref(v1), std::ref(v2), std::ref(v3), 1, 4);
-        std::thread tr3(sum, std::ref(v1), std::ref(v2), std::ref(v3), 2, 4);
-        std::thread tr4(sum, std::ref(v1), std::ref(v2), std::ref(v3), 3, 4);
-
-        auto end4 = std::chrono::high_resolution_clock::now();
-
-        std::chrono::duration<double> time4 = end4 - start4;
-
-        tr1.join();
-        tr2.join();
-        tr3.join();
-        tr4.join();
-
-        std::cout << std::endl;
-        std::cout << "time4 = " << 1000 * time4.count() << std::endl;
-
-        for (int i = 0; i < v3.size(); i++) {
-            std::cout << v3[i] << "\t";
-        }
-        std::cout << std::endl;
-        std::cout << std::endl;
-
-        std::get<0>(obj[cols]) = n;
-        std::get<1>(obj[cols]) = time1.count();
-        std::get<2>(obj[cols]) = time2.count();
-        std::get<3>(obj[cols]) = time4.count();
-
-        n = n * exp;
-        cols++;
     }
+    std::cout << std::endl;
+    std::cout << std::endl;
 
     // ***************** Вывод *****************************
 
+    
+    for (int i = 0; i < log10(1000); i++) {
+        std::cout << " \t";
+        std::cout << std::get<0>(obj[i]) << " \t";
+        //std::cout << " \t";
+    }
+    std::cout << std::endl;
 
     for (int i = 0; i < cols; i++) {
-        std::cout << std::get<0>(obj[i]) << "\t";
-        std::cout << std::get<1>(obj[i]) * 1000 << "\t";
-        std::cout << std::get<2>(obj[i]) * 1000 << "\t";
-        std::cout << std::get<3>(obj[i]) * 1000 << "\t";
+
+        std::cout << std::get<1>(obj[i]) << " \t";
+        std::cout << std::get<2>(obj[i]) << " \t";
+        std::cout << std::get<3>(obj[i]) << " \t";
+        std::cout << std::get<4>(obj[i]) << " \t";
+        //std::cout << std::get<5>(obj[i]) << " \t";
+        //std::cout << std::get<6>(obj[i]) << " \t";
         std::cout << std::endl;
     }
 
@@ -191,10 +148,7 @@ int main() {
 
 
 
-
-    std::cout << std::endl;
     std::cout << std::endl;
     std::cout << "\n\nHello World!\n";
-
     return 0;
 }
