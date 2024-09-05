@@ -8,7 +8,7 @@
 #include <time.h>
 #include <math.h>
 #include <tuple>
-
+#include <Windows.h>
 
 void sum(std::vector<int>& a, std::vector<int>& b, std::vector<int>& c, int start, int end)
 {
@@ -38,6 +38,10 @@ std::vector<int> rand_vec(int lngth)
 
 int main() {
 
+    SetConsoleCP(1251);    
+    SetConsoleOutputCP(1251);  
+
+
     const int cols = 5;
     std::tuple<int, int, double, double, double, double, double>  obj[cols];
 
@@ -48,6 +52,7 @@ int main() {
       
     std::vector<int> v1;
     std::vector<int> v2;
+
 
 // *************** Разделение на потоки ****************************************
 
@@ -62,7 +67,7 @@ int main() {
         std::vector<std::thread> tr(i);        
 
         int rows = 0;
-        for (int n = 1000; n <= 100000; n = 10 * n) {
+        for (int n = 1000; n <= 1000000; n = 10 * n) {
            
             std::vector<int> v3(n);
             v1 = rand_vec(n);
@@ -93,11 +98,7 @@ int main() {
             times[rows] = time.count();
 
             std::cout << "n = " << n << std::endl;
-            std::cout << "time" << rows + 1 << " = " << times[rows] << std::endl;
-
-            //for (int k = 0; k < v3.size(); k++) {
-                //std::cout << v3[k] << "\t";
-            //}             
+            std::cout << "time" << rows + 1 << " = " << times[rows] << std::endl;                      
 
             rows++;
             calctr++;           
@@ -106,7 +107,7 @@ int main() {
 
         // ***************** Сохранение данных *****************************
 
-        if (col < log10(1000)) {
+        if (col < log10(10000)) {
 
         std::get<0>(obj[col]) = 1000 * pow(10, col);
         }
@@ -114,8 +115,7 @@ int main() {
         std::get<2>(obj[col]) = times[0];
         std::get<3>(obj[col]) = times[1];
         std::get<4>(obj[col]) = times[2];
-        //std::get<5>(obj[col]) = times[3];
-        //std::get<6>(obj[col]) = times[4];
+        std::get<5>(obj[col]) = times[3];        
 
         col++;
         std::cout << std::endl;
@@ -123,24 +123,22 @@ int main() {
     std::cout << std::endl;
     std::cout << std::endl;
 
-    // ***************** Вывод *****************************
 
+    // ***************** Вывод *****************************
     
-    for (int i = 0; i < log10(1000); i++) {
-        std::cout << " \t";
-        std::cout << std::get<0>(obj[i]) << " \t";
-        //std::cout << " \t";
+    for (int i = 0; i < log10(10000); i++) {
+        std::cout << "        \t";
+        std::cout << std::get<0>(obj[i]);        
     }
     std::cout << std::endl;
 
     for (int i = 0; i < cols; i++) {
 
-        std::cout << std::get<1>(obj[i]) << " \t";
-        std::cout << std::get<2>(obj[i]) << " \t";
-        std::cout << std::get<3>(obj[i]) << " \t";
-        std::cout << std::get<4>(obj[i]) << " \t";
-        //std::cout << std::get<5>(obj[i]) << " \t";
-        //std::cout << std::get<6>(obj[i]) << " \t";
+        std::cout << std::get<1>(obj[i]) << " потоков \t";
+        std::cout << std::get<2>(obj[i]) << "s \t";
+        std::cout << std::get<3>(obj[i]) << "s \t";
+        std::cout << std::get<4>(obj[i]) << "s \t";
+        std::cout << std::get<5>(obj[i]) << "s \t";       
         std::cout << std::endl;
     }
 
